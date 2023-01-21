@@ -51,7 +51,7 @@ tasks.withType(JavaExec) {
 }
     dependencies {
         testImplementation(
-                'org.junit.jupiter:junit-jupiter-api:5.9.2',
+                'org.junit.jupiter:junit-jupiter-api:5.9.0',
                 'io.qameta.allure:allure-junit5:2.20.1'
 
         )
