@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Jan 21 18:23:39 GMT 2023","Sat Jan 21 18:23:39 GMT 2023","3","","Tests","","Tests","lenWithinBorderSuccessfulTest","Title length within border Test",""
+"passed","Sat Jan 21 18:23:39 GMT 2023","Sat Jan 21 18:23:39 GMT 2023","3","","Tests","","Tests","lenAboveBorderSuccessfulTest","Title length above upper border Test",""
+"passed","Sat Jan 21 18:23:39 GMT 2023","Sat Jan 21 18:23:39 GMT 2023","55","","Tests","","Tests","anotherLanguageSuccessfulTest","Enter title on language which different from English Test",""
+"passed","Sat Jan 21 18:23:39 GMT 2023","Sat Jan 21 18:23:39 GMT 2023","8","","Tests","","Tests","nullStringUnSuccessfulTest","Title string is null Test",""
+"passed","Sat Jan 21 18:23:39 GMT 2023","Sat Jan 21 18:23:39 GMT 2023","2","","Tests","","Tests","lenEqualBorderSuccessfulTest","Title length equal upper border Test",""
+"passed","Sat Jan 21 18:23:39 GMT 2023","Sat Jan 21 18:23:39 GMT 2023","4","","Tests","","Tests","lenEqualBorderLastCharSpaceSuccessfulTest","Title length equal upper border and last character is space Test",""
+"passed","Sat Jan 21 18:23:39 GMT 2023","Sat Jan 21 18:23:39 GMT 2023","1","","Tests","","Tests","emptyStringUnSuccessfulTest","Empty title string Test",""
