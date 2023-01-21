@@ -1,6 +1,14 @@
 name: Test
 
 on: workflow_dispatch
+push:
+  branches-ignore:
+    - '!master' # ignore gh-pages
+  paths:
+    - '!.gitlab-ci.yml'
+    - '!allure-template.yml'
+    - '**/allure-history.yml'
+    - 'allure-report-action/*'
 
 jobs:
   test:
