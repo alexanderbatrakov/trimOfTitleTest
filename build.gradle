@@ -22,6 +22,8 @@ allure {
     version.set("2.20.0")
 
     adapter {
+        autoconfigure = true
+        aspectjweaver = true
         aspectjWeaver.set(true) //обработка аннотации @Step
 
         frameworks {
