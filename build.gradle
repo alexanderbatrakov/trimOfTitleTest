@@ -6,13 +6,13 @@ plugins {
     id 'application'
 }
 
-apply plugin : "java"
+apply plugin: "java"
 ext {
     javaMainClass = "org.example.Main"
 
 }
 application {
-mainClassName = 'org.example.Main'
+    mainClassName = 'org.example.Main'
 
 }
 
@@ -20,6 +20,7 @@ group 'org.example'
 version '1.0-SNAPSHOT'
 allure {
     version.set("2.20.0")
+
     adapter {
         aspectjWeaver.set(true) //обработка аннотации @Step
 
@@ -42,24 +43,27 @@ tasks.withType(JavaCompile) {
 tasks.withType(Test) {
     useJUnitPlatform()
 }
-
-
-dependencies {
-    testImplementation (
-            'org.junit.jupiter:junit-jupiter-api:5.9.2',
-            'io.qameta.allure:allure-selenide:2.20.0'
-
-    )
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
+tasks.withType(JavaExec) {
+    if (it.name == 'junitPlatformTest') {
+        doFirst { jvmArgs "-javaagent:${configurations.agent.singleFile}" } finalizedBy 'allureReport'
+    }
 }
+    dependencies {
+        testImplementation(
+                'org.junit.jupiter:junit-jupiter-api:5.9.2',
+                'io.qameta.allure:allure-selenide:2.20.0'
+
+        )
+        testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
+    }
 
 
-test {
-    useJUnitPlatform()
-}
+    test {
+        useJUnitPlatform()
+    }
 
-run {
-    systemProperties(System.getProperties())
+    run {
+        systemProperties(System.getProperties())
     }
 
 
