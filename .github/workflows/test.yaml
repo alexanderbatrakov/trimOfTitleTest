@@ -1,9 +1,6 @@
-name: allure-junit5-gradle
+name: Test
 
-on:
-  push:
-    branches-ignore:
-      - '!master'
+on: workflow_dispatch
 
 jobs:
   test:
