@@ -1,4 +1,3 @@
-import com.sun.tools.javac.Main
 
 plugins {
     id 'java-library'
@@ -19,7 +18,7 @@ application {
 group 'org.example'
 version '1.0-SNAPSHOT'
 allure {
-    version.set("2.17.0")
+    version.set("2.20.1")
 
     adapter {
         autoconfigure = true
@@ -28,7 +27,7 @@ allure {
 
         frameworks {
             junit5 {
-                adapterVersion.set("2.17.0")
+                adapterVersion.set("2.20.1")
             }
         }
     }
@@ -53,7 +52,7 @@ tasks.withType(JavaExec) {
     dependencies {
         testImplementation(
                 'org.junit.jupiter:junit-jupiter-api:5.9.2',
-                'io.qameta.allure:allure-selenide:2.17.0'
+                'io.qameta.allure:allure-junit5:2.20.1'
 
         )
         testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
