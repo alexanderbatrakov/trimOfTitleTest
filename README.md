@@ -54,7 +54,9 @@ click to "Test" ->
 click to "Run workflow" ->
 click to "Run workflow"
 ```
-
+<p  align="center">
+<img src="resources/gif1.gif" alt="ActionsVideo" width="800">
+</p>
 
 ## <a name="PropertyFiles">Property files</a>
 
