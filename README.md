@@ -1,6 +1,6 @@
 # Project for test task
 
-> This project consist a simple algorithm to cut website titles and some unit tests. Also are used Allure Report to visialist unit tests results.
+> This project consist a simple algorithm to cut website titles and some unit tests. Also is used Allure Report to visialist unit tests results.
 
 
 ## <a name="Coverage">Coverage of unit tests</a>
@@ -52,7 +52,7 @@ Results of running you can find under "Run ./gradlew run" task:
 
 ## <a name="AllureReport">Test results in [Allure Report](https://alexanderbatrakov.github.io/trimOfTitleTest/64/)</a>
 
-Allure report created after each running of build. You can find result:
+Allure report is created after each running of build. You can find result:
 ```properties
 click to "Environment" -> click to "View deploment"
 ```
