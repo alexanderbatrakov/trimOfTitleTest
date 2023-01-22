@@ -46,9 +46,9 @@ click to "Run workflow"
 <p  align="center">
 <img src="src/main/resources/gif1.gif" alt="ActionsVideo" width="800">
 </p>
-Results of running you can find under Run ./gradlew run task:
+Results of running you can find under "Run ./gradlew run" task:
 <p  align="center">
-<img src="src/main/resources/2023-01-22_10-30-16.png" alt="Run" width="500">
+<img src="src/main/resources/2023-01-22_10-30-16.png" alt="Run" width="600">
 </p>
 
 ## <a name="AllureReport">Test results in [Allure Report](https://alexanderbatrakov.github.io/trimOfTitleTest/64/)</a>
