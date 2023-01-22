@@ -2,17 +2,6 @@
 
 > This project consist a simple algorithm to cut website titles and some unit tests. Also are use Allure Report to visialist unit tests results.
 
-# <a name="Description">Description</a>
-
-The test project consists of Web, API and mobile(android) tests.\
-A brief list of interesting facts about the project:
-
-- [x] `Page Object` with steps using `Chain of Invocations`
-- [x] Fake data generating with `Faker` library
-- [x] Parametrized build
-- [x] Different configuration files for test running depending on build parameters
-- [x] Config with `Owner` library
-- [x] `Allure TestOps` integration
 
 ## <a name="Coverage">Coverage of unit tests</a>
 
@@ -55,91 +44,32 @@ click to "Run workflow" ->
 click to "Run workflow"
 ```
 <p  align="center">
-<img src="resources/gif1.gif" alt="ActionsVideo" width="800">
+<img src="src/main/resources/gif1.gif" alt="ActionsVideo" width="800">
+</p>
+Results of running you can find under "Run ./gradlew run" task:
+<p  align="center">
+<img src="src/main/resources/2023-01-22_10-30-16.png" alt="Run" width="800">
 </p>
 
-## <a name="PropertyFiles">Property files</a>
+## <a name="AllureReport">Test results in [Allure Report](https://alexanderbatrakov.github.io/trimOfTitleTest/64/)</a>
 
-Possible properties in a `${env}.properties` file:
-
+Allure report created after each running of build. You can find result:
 ```properties
-remoteUrl=
-browserSize=
-browser=
-browserVersion=
-baseUrl=
-isRemote=
+click to "Environment" -> click to "View deploment"
 ```
-
-> - *remoteUrl* - URL for remote WebDriver
->- *browserSize* - size of browser for Web tests
->- *browser* - browser for Web tests
->- *browserVersion* - version of browser
->- *baseUrl* - base URL for Web tests
->- *isRemote* - flag for local/remote running
-
-### <a name="PropertyFilesDefaults">Default property files</a>
-
-    local.properties
-
-```properties
-remoteUrl=https://user1:1234@selenoid.autotests.cloud/
-browserSize=1920x1080
-browser=chrome
-browserVersion=100.0
-baseUrl=https://www.reddit.com/
-isRemote=false
-```
-
-## <a name="RunInJenkins">Run in [Jenkins](https://jenkins.autotests.cloud/job/reddit_tests//)</a>
-
-Click on "Build with Parameters" button, after that click on "Build":
 <p  align="center">
-<img src="images/screen/gif_reddit.gif" alt="JenkinsBuildMainPage" width="800">
+<img src="src/main/resources/gif2.gif" alt="Allure" width="800">
 </p>
 
-File with credentials from Reddit account has already attached.
-<p  align="center">
-<img src="images/screen/2023-01-10_17-23-21.png" alt="JenkinsBuildMainPage" width="800">
-</p>
-
-# <a name="TelegramNotifications">Telegram Notifications</a>
-
-Telegram bot sends a report to a special telegram chat by results of each build. Information about bot setting you can
-find by link:https://github.com/qa-guru/allure-notifications. Bot also can be use for Slack, Email notifications.
-<p  align="center">
-<img src="images/screen/2023-01-10_19-04-54.png" alt="TelegramNotification" width="450">
-</p>
-
-# <a name="AllureReport">Test results report in [Allure Report](https://jenkins.autotests.cloud/job/reddit_tests/allure/)</a>
-
-## Main page
-
-Main page of Allure report contains some general information about ran tests.
-
+Main page of Allure report contains the following blocks:
+>- <code><strong>*ALLURE REPORT*</strong></code> - displays date and time of the test, overall number of launched tests
+>- <code><strong>*TREND*</strong></code> - displays trend of running tests for all runs
+>- <code><strong>*SUITES*</strong></code> - displays distribution of tests by suites
+>- <code><strong>*CATEGORIES*</strong></code> - displays distribution of unsuccessful tests by defect types
 <p align="center">
-  <img src="images/screen/2023-01-10_19-11-29.png" alt="AllureReportMain" width="950">
+  <img src="src/main/resources/2023-01-22_10-54-02.png" alt="AllureReportSuites" width="1150">
 </p>
-
-## List of tests with steps and test artefacts
-
-On the page the list of the tests grouped by suites with status shown for each test.
-
-<p align="center">
-  <img src="images/screen/allure.png" alt="AllureReportSuites" width="1150">
+On the page the list of the tests grouped by suites with status shown for each test
+<p  align="center">
+<img src="src/main/resources/2023-01-22_11-01-26.png" alt="Allure3" width="800">
 </p>
-
-Each test has artefacts:
-> - Screenshot
->- Page Source
->- Browser console log
->- Video
-
-## Example video of test run from Allure report
-
-<p align="left">
-  <img src="images/screen/video.gif" alt="AllureReportSuites2" width="900">
-</p>
-
-
-
