@@ -1,4 +1,4 @@
-## Project for test task
+# Project for test task
 
 > This project consist a simple algorithm to cut website titles and some unit tests. Also are use Allure Report to visialist unit tests results.
 
@@ -17,7 +17,7 @@
 
 ### <a name="GradleCommand">Local running</a>
 
-To run locally download project and use command:
+To run locally download project and use command at terminal:
 
 
 ```bash
@@ -46,9 +46,9 @@ click to "Run workflow"
 <p  align="center">
 <img src="src/main/resources/gif1.gif" alt="ActionsVideo" width="800">
 </p>
-Results of running you can find under "Run ./gradlew run" task:
+Results of running you can find under Run ./gradlew run task:
 <p  align="center">
-<img src="src/main/resources/2023-01-22_10-30-16.png" alt="Run" width="800">
+<img src="src/main/resources/2023-01-22_10-30-16.png" alt="Run" width="500">
 </p>
 
 ## <a name="AllureReport">Test results in [Allure Report](https://alexanderbatrakov.github.io/trimOfTitleTest/64/)</a>
