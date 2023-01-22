@@ -69,6 +69,7 @@ Main page of Allure report contains the following blocks:
 <p align="center">
   <img src="src/main/resources/2023-01-22_10-54-02.png" alt="AllureReportSuites" width="1150">
 </p>
+
 On the page contains list of the tests grouped by suites with status shown for each test
 
 <p  align="center">
