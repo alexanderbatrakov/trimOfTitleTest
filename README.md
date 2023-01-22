@@ -21,8 +21,7 @@ To run locally download project and use command at terminal:
 
 
 ```bash
-gradle  run -Dtitle="Volvo released a new car with the following spec: 
-V6 236HP. It will cost 22647 and going to be sold in New York" -Dlen=25
+gradle  run -Dtitle="Volvo released a new car with the following spec: V6 236HP. It will cost 22647 and going to be sold in New York" -Dlen=25
 ```
 > - *title* - string for cutting
 >- *len* - length of title which will be show on website
