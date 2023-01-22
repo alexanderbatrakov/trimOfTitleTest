@@ -1,6 +1,6 @@
 # Project for test task
 
-> This project consist a simple algorithm to cut website titles and some unit tests. Also are use Allure Report to visialist unit tests results.
+> This project consist a simple algorithm to cut website titles and some unit tests. Also are used Allure Report to visialist unit tests results.
 
 
 ## <a name="Coverage">Coverage of unit tests</a>
